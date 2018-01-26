@@ -15,6 +15,8 @@
  */
 package com.example.android.sunshine.utilities;
 
+import android.net.Uri;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -66,7 +68,15 @@ public final class NetworkUtils {
      */
     public static URL buildUrl(String locationQuery) {
         // TODO (1) Fix this method to return the URL used to query Open Weather Map's API
-        return null;
+        Uri uri = Uri.parse(FORECAST_BASE_URL).buildUpon().build();
+        URL openWeatherMapURL = null;
+        try {
+            openWeatherMapURL = new URL(uri.toString());
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        return openWeatherMapURL;
     }
 
     /**
