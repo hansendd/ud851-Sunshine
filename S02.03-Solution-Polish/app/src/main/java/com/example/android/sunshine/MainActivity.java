@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
         // COMPLETED (18) Within your AsyncTask, override the method onPreExecute and show the loading indicator
         @Override
-        protected void onPreExecute() {
+        protected void onPreExecute() {sf
             super.onPreExecute();
             mLoadingIndicator.setVisibility(View.VISIBLE);
         }
