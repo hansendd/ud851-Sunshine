@@ -212,10 +212,10 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
     class ForecastAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
 //      COMPLETED (4) Replace the weatherSummary TextView with individual weather detail TextViews
-        final TextView dateView;
+inal TextView dateView;
         final TextView descriptionView;
         final TextView highTempView;
-        final TextView lowTempView;
+        final TextView lowTempView;f
 
 //      COMPLETED (5) Add an ImageView for the weather icon
         final ImageView iconView;
